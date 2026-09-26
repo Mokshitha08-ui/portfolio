@@ -1,0 +1,55 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sticker-shadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#282020" flood-opacity="0.16"/>
+    </filter>
+    <linearGradient id="cord-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#EBEBEB"/>
+      <stop offset="100%" stop-color="#D9D9D9"/>
+    </linearGradient>
+    <linearGradient id="earbud-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#ECECEC"/>
+      <stop offset="100%" stop-color="#D4D4D4"/>
+    </linearGradient>
+    <linearGradient id="mesh-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4B4B4B"/>
+      <stop offset="100%" stop-color="#2D2D2D"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#sticker-shadow)">
+    <!-- White Cutout Sticker Border (Behind) -->
+    <path d="M 68 38 C 50 42 45 62 55 78 C 65 92 78 112 85 135 C 92 155 105 178 128 184 C 145 188 165 175 168 152 C 170 135 158 118 148 102 C 138 85 142 62 130 45 C 120 32 95 32 68 38 Z" fill="white" opacity="0.9" />
+
+    <!-- Flowing Cord Left -->
+    <path d="M 72 75 C 70 100 82 125 98 145 C 108 158 114 172 118 182" stroke="white" stroke-width="8" stroke-linecap="round" />
+    <path d="M 72 75 C 70 100 82 125 98 145 C 108 158 114 172 118 182" stroke="url(#cord-grad)" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Flowing Cord Right -->
+    <path d="M 142 68 C 144 95 132 120 118 145 C 114 155 116 168 118 182" stroke="white" stroke-width="8" stroke-linecap="round" />
+    <path d="M 142 68 C 144 95 132 120 118 145 C 114 155 116 168 118 182" stroke="url(#cord-grad)" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Main Cord Down -->
+    <path d="M 118 182 C 120 195 125 205 130 215" stroke="white" stroke-width="9" stroke-linecap="round" />
+    <path d="M 118 182 C 120 195 125 205 130 215" stroke="url(#cord-grad)" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Cord Splitter / Controller -->
+    <rect x="113" y="174" width="10" height="15" rx="3" fill="#E2E2E2" stroke="#CCCCCC" stroke-width="1"/>
+
+    <!-- Left Earbud Stem -->
+    <path d="M 70 56 L 73 78" stroke="url(#earbud-grad)" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="66" cy="50" rx="14" ry="17" transform="rotate(-20 66 50)" fill="url(#earbud-grad)" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Left Speaker Mesh -->
+    <ellipse cx="62" cy="48" rx="5" ry="8" transform="rotate(-20 62 48)" fill="url(#mesh-grad)"/>
+    <ellipse cx="71" cy="52" rx="2.5" ry="4" transform="rotate(-20 71 52)" fill="#8E8E93"/>
+
+    <!-- Right Earbud Stem -->
+    <path d="M 144 50 L 141 72" stroke="url(#earbud-grad)" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="148" cy="44" rx="14" ry="17" transform="rotate(20 148 44)" fill="url(#earbud-grad)" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Right Speaker Mesh -->
+    <ellipse cx="152" cy="42" rx="5" ry="8" transform="rotate(20 152 42)" fill="url(#mesh-grad)"/>
+    <ellipse cx="143" cy="46" rx="2.5" ry="4" transform="rotate(20 143 46)" fill="#8E8E93"/>
+  </g>
+</svg>

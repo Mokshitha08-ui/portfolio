@@ -1,0 +1,50 @@
+<svg width="230" height="150" viewBox="0 0 230 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="card-shadow" x="-8%" y="-8%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="2" dy="7" stdDeviation="5" flood-color="#282020" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5"/>
+      <stop offset="100%" stop-color="#F2EBE0"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#card-shadow)">
+    <!-- White Cutout Sticker Edge -->
+    <rect x="10" y="10" width="210" height="130" rx="10" fill="#FFFFFF" stroke="#E6DFD5" stroke-width="2"/>
+
+    <!-- Scrapbook Card Body -->
+    <rect x="14" y="14" width="202" height="122" rx="7" fill="url(#card-bg)"/>
+
+    <!-- Subtle Grid Lines on Card -->
+    <line x1="14" y1="42" x2="216" y2="42" stroke="#E3D7C8" stroke-width="1"/>
+    <line x1="14" y1="68" x2="216" y2="68" stroke="#E3D7C8" stroke-width="0.7" stroke-dasharray="3 3"/>
+    <line x1="14" y1="94" x2="216" y2="94" stroke="#E3D7C8" stroke-width="0.7" stroke-dasharray="3 3"/>
+    <line x1="14" y1="120" x2="216" y2="120" stroke="#E3D7C8" stroke-width="0.7" stroke-dasharray="3 3"/>
+
+    <!-- Card Header / Tag -->
+    <rect x="24" y="24" width="60" height="12" rx="3" fill="#E8C7C7" opacity="0.6"/>
+    <text x="30" y="33" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="700" fill="#9B1C31" letter-spacing="0.5">DEV_JOURNAL</text>
+    <circle cx="198" cy="28" r="3.5" fill="#9B1C31"/>
+
+    <!-- Code Snippet Content -->
+    <text x="24" y="58" font-family="'JetBrains Mono', monospace" font-size="9" fill="#5C4E49">
+      <tspan fill="#9B1C31" font-weight="600">const</tspan> craft = {
+    </text>
+    <text x="32" y="76" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#5C4E49">
+      vision: <tspan fill="#751426" font-weight="600">"thoughtful UI"</tspan>,
+    </text>
+    <text x="32" y="94" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#5C4E49">
+      passion: <tspan fill="#751426" font-weight="600">"clean code"</tspan>,
+    </text>
+    <text x="32" y="112" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#5C4E49">
+      coffee: <tspan fill="#9B1C31" font-weight="600">Infinity</tspan>
+    </text>
+    <text x="24" y="128" font-family="'JetBrains Mono', monospace" font-size="9" fill="#5C4E49">};</text>
+
+    <!-- Mini Stamp on Card Bottom Right -->
+    <rect x="156" y="85" width="46" height="38" rx="2" fill="none" stroke="#9B1C31" stroke-width="1.2" stroke-dasharray="2 1.5" opacity="0.85" transform="rotate(-6 156 85)"/>
+    <text x="162" y="102" font-family="'Playfair Display', serif" font-size="7" font-weight="700" fill="#9B1C31" opacity="0.9" transform="rotate(-6 162 102)">VERIFIED</text>
+    <text x="163" y="112" font-family="'JetBrains Mono', monospace" font-size="6" fill="#9B1C31" opacity="0.8" transform="rotate(-6 163 112)">CBIT • 2026</text>
+  </g>
+</svg>

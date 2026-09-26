@@ -1,0 +1,102 @@
+<svg width="600" height="380" viewBox="0 0 600 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6F0"/>
+      <stop offset="100%" stop-color="#EFE6DA"/>
+    </linearGradient>
+    <filter id="mb-drop" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#282020" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Frame -->
+  <rect width="600" height="380" rx="12" fill="url(#mb-bg)" stroke="#E4DCD0" stroke-width="2"/>
+  <rect width="600" height="36" rx="12" fill="#EBE3D6"/>
+  <rect y="24" width="600" height="12" fill="#EBE3D6"/>
+  <line x1="0" y1="36" x2="600" y2="36" stroke="#DDD3C3" stroke-width="1"/>
+
+  <!-- Window Dots -->
+  <circle cx="20" cy="18" r="4" fill="#E26D5C"/>
+  <circle cx="34" cy="18" r="4" fill="#E8B86D"/>
+  <circle cx="48" cy="18" r="4" fill="#70B77E"/>
+
+  <rect x="120" y="8" width="360" height="20" rx="10" fill="#FAF6EF" stroke="#DFD5C4" stroke-width="1"/>
+  <text x="300" y="22" font-family="'JetBrains Mono', monospace" font-size="9" fill="#7A6C65" text-anchor="middle">mindbridge.app/circles/wellness</text>
+
+  <!-- Content Grid -->
+  <!-- Left Side: Mood Tracker & Personal Profile -->
+  <g filter="url(#mb-drop)">
+    <rect x="24" y="52" width="220" height="308" rx="8" fill="#FFFFFF" stroke="#EAE1D3" stroke-width="1"/>
+
+    <!-- Profile Header -->
+    <circle cx="60" cy="90" r="22" fill="#E8C7C7"/>
+    <text x="60" y="95" font-family="'Playfair Display', serif" font-weight="700" font-size="16" fill="#9B1C31" text-anchor="middle">M</text>
+    <text x="94" y="86" font-family="'Playfair Display', serif" font-weight="600" font-size="13" fill="#282020">Mokshitha G.</text>
+    <text x="94" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#8B7B74">Mindful Explorer • Student</text>
+
+    <!-- Interest tags -->
+    <rect x="36" y="122" width="54" height="18" rx="9" fill="#F8ECEE"/>
+    <text x="63" y="134" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#9B1C31" text-anchor="middle">#journaling</text>
+
+    <rect x="96" y="122" width="64" height="18" rx="9" fill="#E9DED0"/>
+    <text x="128" y="134" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#5C4E49" text-anchor="middle">#mindfulness</text>
+
+    <rect x="166" y="122" width="56" height="18" rx="9" fill="#F8ECEE"/>
+    <text x="194" y="134" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#9B1C31" text-anchor="middle">#cs-peers</text>
+
+    <!-- Mood Tracking Calendar Mini -->
+    <line x1="36" y1="154" x2="232" y2="154" stroke="#F0E8DC" stroke-width="1"/>
+    <text x="36" y="174" font-family="'Playfair Display', serif" font-weight="600" font-size="11" fill="#282020">Weekly Mood Rhythm</text>
+    <text x="210" y="174" font-family="'JetBrains Mono', monospace" font-size="8" fill="#9B1C31">85% Calm</text>
+
+    <!-- Mood Circles Mon-Sun -->
+    <circle cx="48" cy="200" r="10" fill="#E8C7C7"/><text x="48" y="203" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#9B1C31">M</text>
+    <circle cx="74" cy="200" r="10" fill="#E8C7C7"/><text x="74" y="203" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#9B1C31">T</text>
+    <circle cx="100" cy="200" r="10" fill="#9B1C31"/><text x="100" y="203" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#FFF">W</text>
+    <circle cx="126" cy="200" r="10" fill="#E8C7C7"/><text x="126" y="203" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#9B1C31">T</text>
+    <circle cx="152" cy="200" r="10" fill="#9B1C31"/><text x="152" y="203" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#FFF">F</text>
+    <circle cx="178" cy="200" r="10" fill="#E9DED0"/><text x="178" y="203" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#5C4E49">S</text>
+    <circle cx="204" cy="200" r="10" fill="#E8C7C7"/><text x="204" y="203" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#9B1C31">S</text>
+
+    <!-- Journal Prompt Note -->
+    <rect x="36" y="230" width="196" height="114" rx="6" fill="#FAF6EF" stroke="#EAE1D3" stroke-width="1"/>
+    <text x="46" y="250" font-family="'Playfair Display', serif" font-weight="600" font-size="10" fill="#9B1C31">Today's Reflection</text>
+    <text x="46" y="270" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5C4E49">"Built two clean components today. Felt grounded & excited to learn new distributed patterns."</text>
+    <line x1="46" y1="290" x2="222" y2="290" stroke="#EADBCE" stroke-width="1" stroke-dasharray="2 2"/>
+    <text x="46" y="312" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#8B7B74">Encrypted with Prisma & PG</text>
+  </g>
+
+  <!-- Right Side: Community Support Circles -->
+  <g filter="url(#mb-drop)">
+    <rect x="258" y="52" width="318" height="308" rx="8" fill="#FFFFFF" stroke="#EAE1D3" stroke-width="1"/>
+    <!-- Circles Header -->
+    <text x="276" y="78" font-family="'Playfair Display', serif" font-weight="600" font-size="14" fill="#282020">Active Wellness Circles</text>
+    <rect x="496" y="66" width="65" height="18" rx="4" fill="#9B1C31"/>
+    <text x="528" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="8" fill="#FFFFFF" text-anchor="middle">+ New Circle</text>
+
+    <!-- Circle Card 1: CS Undergrad Stress Relief -->
+    <rect x="276" y="96" width="285" height="74" rx="6" fill="#FAF7F2" stroke="#EFE6DA" stroke-width="1"/>
+    <circle cx="296" cy="120" r="12" fill="#E8C7C7"/>
+    <text x="296" y="124" font-family="'Playfair Display', serif" font-weight="700" font-size="11" fill="#9B1C31" text-anchor="middle">CS</text>
+    <text x="318" y="116" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="10.5" fill="#282020">Engineering Students Circle</text>
+    <text x="318" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#8B7B74">Public • 342 members • Daily check-ins</text>
+    <rect x="500" y="118" width="52" height="18" rx="9" fill="#E8C7C7" opacity="0.6"/>
+    <text x="526" y="130" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#9B1C31" text-anchor="middle">JOINED</text>
+
+    <!-- Circle Card 2: Mindful Coding & Deep Work -->
+    <rect x="276" y="180" width="285" height="74" rx="6" fill="#FAF7F2" stroke="#EFE6DA" stroke-width="1"/>
+    <circle cx="296" cy="204" r="12" fill="#E9DED0"/>
+    <text x="296" y="208" font-family="'Playfair Display', serif" font-weight="700" font-size="11" fill="#751426" text-anchor="middle">MC</text>
+    <text x="318" y="200" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="10.5" fill="#282020">Mindful Coding & Flow State</text>
+    <text x="318" y="214" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#8B7B74">Private • 120 members • Request to join</text>
+    <rect x="500" y="202" width="52" height="18" rx="9" fill="#282020"/>
+    <text x="526" y="214" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#FAF6EE" text-anchor="middle">REQUEST</text>
+
+    <!-- Activity Stream -->
+    <text x="276" y="278" font-family="'Playfair Display', serif" font-weight="600" font-size="11" fill="#282020">Recent Circle Activity</text>
+    <line x1="276" y1="288" x2="561" y2="288" stroke="#F0E8DC" stroke-width="1"/>
+    <text x="286" y="308" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5C4E49">💬 Anya shared a meditation prompt in <tspan fill="#9B1C31">#CS-Peers</tspan></text>
+    <text x="286" y="328" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#5C4E49">🌱 5 peers completed their weekly gratitude log</text>
+    <text x="286" y="348" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#8B7B74">Next.js App Router • Prisma ORM • Real-time Events</text>
+  </g>
+</svg>

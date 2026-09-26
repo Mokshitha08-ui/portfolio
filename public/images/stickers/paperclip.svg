@@ -1,0 +1,37 @@
+<svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="clip-shadow" x="-20%" y="-15%" width="150%" height="140%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#282020" flood-opacity="0.22"/>
+    </filter>
+    <linearGradient id="metal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAECEF"/>
+      <stop offset="25%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#C5C9D0"/>
+      <stop offset="75%" stop-color="#9BA1AB"/>
+      <stop offset="100%" stop-color="#DFE2E6"/>
+    </linearGradient>
+    <linearGradient id="brass-sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#A5ACB5" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#555E6B" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#clip-shadow)">
+    <!-- White Sticker Cutout Border / Padding -->
+    <path d="M 52 14 C 32 14 20 28 20 50 L 20 135 C 20 160 36 174 58 174 C 80 174 96 160 96 135 L 96 68 C 96 52 86 42 72 42 C 58 42 48 52 48 68 L 48 132 C 48 140 54 146 62 146 C 70 146 76 140 76 132 L 76 80"
+          stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Outer Ambient Occlusion Behind Clip -->
+    <path d="M 52 14 C 32 14 20 28 20 50 L 20 135 C 20 160 36 174 58 174 C 80 174 96 160 96 135 L 96 68 C 96 52 86 42 72 42 C 58 42 48 52 48 68 L 48 132 C 48 140 54 146 62 146 C 70 146 76 140 76 132 L 76 80"
+          stroke="#555E6B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+
+    <!-- Main Metallic Wire -->
+    <path d="M 52 14 C 32 14 20 28 20 50 L 20 135 C 20 160 36 174 58 174 C 80 174 96 160 96 135 L 96 68 C 96 52 86 42 72 42 C 58 42 48 52 48 68 L 48 132 C 48 140 54 146 62 146 C 70 146 76 140 76 132 L 76 80"
+          stroke="url(#metal-grad)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Shiny Chrome Highlight Inner Core -->
+    <path d="M 52 14 C 32 14 20 28 20 50 L 20 135 C 20 160 36 174 58 174 C 80 174 96 160 96 135 L 96 68 C 96 52 86 42 72 42 C 58 42 48 52 48 68 L 48 132 C 48 140 54 146 62 146 C 70 146 76 140 76 132 L 76 80"
+          stroke="url(#brass-sheen)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

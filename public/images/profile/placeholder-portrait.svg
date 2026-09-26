@@ -1,0 +1,42 @@
+<svg width="480" height="600" viewBox="0 0 480 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="photo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFE8DD"/>
+      <stop offset="50%" stop-color="#E4D8C8"/>
+      <stop offset="100%" stop-color="#D9CBB7"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="60%">
+      <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#282020" stop-opacity="0.18"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Photo Matte Background -->
+  <rect width="480" height="600" fill="url(#photo-bg)"/>
+  <rect width="480" height="600" fill="url(#vignette)"/>
+
+  <!-- Subtle Editorial Framing -->
+  <rect x="24" y="24" width="432" height="552" fill="none" stroke="#282020" stroke-width="1" stroke-opacity="0.15"/>
+  <rect x="28" y="28" width="424" height="544" fill="none" stroke="#282020" stroke-width="0.5" stroke-opacity="0.1" stroke-dasharray="4 4"/>
+
+  <!-- Stylized Editorial Silhouette / Portrait Silhouette -->
+  <!-- Shoulders & Torso -->
+  <path d="M 140 500 C 140 430 170 380 240 380 C 310 380 340 430 340 500 L 370 600 L 110 600 Z" fill="#282020" opacity="0.82"/>
+  <!-- Neck -->
+  <path d="M 215 320 L 265 320 L 262 385 L 218 385 Z" fill="#C8BAA7"/>
+  <!-- Head / Face Silhouette -->
+  <ellipse cx="240" cy="270" rx="60" ry="72" fill="#D5C7B5"/>
+  <!-- Hair Silhouette -->
+  <path d="M 172 260 C 168 180 200 160 240 160 C 290 160 312 190 310 260 C 310 290 316 340 322 390 C 300 400 280 370 280 330 C 270 230 260 210 240 210 C 215 210 205 240 198 330 C 196 370 176 395 160 385 C 166 335 172 290 172 260 Z" fill="#282020" opacity="0.92"/>
+
+  <!-- Editorial typography overlay at bottom -->
+  <g transform="translate(240, 525)">
+    <rect x="-135" y="-22" width="270" height="42" rx="6" fill="#F7F2E9" opacity="0.95" stroke="#E9DED0" stroke-width="1.5"/>
+    <text x="0" y="-3" font-family="'Playfair Display', Georgia, serif" font-size="16" font-style="italic" fill="#9B1C31" text-anchor="middle" font-weight="600">mokshitha gali</text>
+    <text x="0" y="13" font-family="'JetBrains Mono', monospace" font-size="9" fill="#5C4E49" text-anchor="middle" letter-spacing="1">PORTRAIT • 2026</text>
+  </g>
+
+  <!-- Editorial corner tags -->
+  <text x="40" y="48" font-family="'JetBrains Mono', monospace" font-size="8" fill="#5C4E49" opacity="0.6">FIG. 01</text>
+  <text x="440" y="48" font-family="'JetBrains Mono', monospace" font-size="8" fill="#9B1C31" text-anchor="end" opacity="0.8">★ ARCHIVE</text>
+</svg>

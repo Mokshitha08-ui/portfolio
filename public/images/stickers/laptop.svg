@@ -1,0 +1,90 @@
+<svg width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="laptop-shadow" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#282020" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="lid-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E4E7"/>
+      <stop offset="50%" stop-color="#D5D8DC"/>
+      <stop offset="100%" stop-color="#C0C4C9"/>
+    </linearGradient>
+    <linearGradient id="base-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2F3F5"/>
+      <stop offset="60%" stop-color="#DCDFE3"/>
+      <stop offset="100%" stop-color="#B8BDC3"/>
+    </linearGradient>
+    <linearGradient id="screen-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1E24"/>
+      <stop offset="100%" stop-color="#282634"/>
+    </linearGradient>
+    <linearGradient id="screen-glare" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#laptop-shadow)">
+    <!-- White Sticker Cutout Border -->
+    <rect x="25" y="16" width="170" height="142" rx="14" fill="#FFFFFF" stroke="#F0EFE9" stroke-width="2"/>
+
+    <!-- LAPTOP DISPLAY (OPEN LID) -->
+    <!-- Lid Bezel -->
+    <rect x="34" y="24" width="152" height="96" rx="8" fill="url(#lid-grad)" stroke="#AEB3B9" stroke-width="1"/>
+    <!-- Glass Display Border -->
+    <rect x="39" y="29" width="142" height="86" rx="4" fill="#141416"/>
+    <!-- Screen Viewport -->
+    <rect x="42" y="32" width="136" height="80" rx="2" fill="url(#screen-grad)"/>
+
+    <!-- Screen Glare diagonal -->
+    <path d="M 42 32 L 120 32 L 42 110 Z" fill="url(#screen-glare)"/>
+
+    <!-- Code Editor UI on Screen -->
+    <!-- Window buttons -->
+    <circle cx="49" cy="38" r="2.2" fill="#FF5F56"/>
+    <circle cx="56" cy="38" r="2.2" fill="#FFBD2E"/>
+    <circle cx="63" cy="38" r="2.2" fill="#27C93F"/>
+
+    <!-- Editor Lines -->
+    <!-- Code line 1: const build = () => { -->
+    <rect x="48" y="47" width="22" height="3" rx="1.5" fill="#E8C7C7"/>
+    <rect x="74" y="47" width="28" height="3" rx="1.5" fill="#9B1C31"/>
+    <rect x="106" y="47" width="12" height="3" rx="1.5" fill="#E9DED0"/>
+
+    <!-- Code line 2: indent return 'creativity'; -->
+    <rect x="56" y="55" width="20" height="3" rx="1.5" fill="#8B7B74"/>
+    <rect x="80" y="55" width="34" height="3" rx="1.5" fill="#FFFFFF" opacity="0.9"/>
+
+    <!-- Code line 3: indent mokshitha.design(); -->
+    <rect x="56" y="63" width="36" height="3" rx="1.5" fill="#BA2742"/>
+    <rect x="96" y="63" width="22" height="3" rx="1.5" fill="#E9DED0"/>
+
+    <!-- Code line 4: } -->
+    <rect x="48" y="71" width="8" height="3" rx="1.5" fill="#E8C7C7"/>
+
+    <!-- Subtle waveform / mini chart right side -->
+    <path d="M 125 90 Q 135 78 145 88 T 165 82" stroke="#9B1C31" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <circle cx="165" cy="82" r="2" fill="#9B1C31"/>
+
+    <!-- Camera notch / dot at top bezel -->
+    <circle cx="110" cy="27" r="1.2" fill="#222"/>
+
+    <!-- LAPTOP BASE (LOWER CHASSIS) -->
+    <!-- Lower Body Perspective Plate -->
+    <path d="M 28 120 L 192 120 L 186 148 C 185 150 182 152 178 152 L 42 152 C 38 152 35 150 34 148 Z" fill="url(#base-grad)" stroke="#A6ABB1" stroke-width="1"/>
+    <!-- Front Edge Highlight -->
+    <path d="M 33 148 L 187 148 L 182 151 L 38 151 Z" fill="#FFFFFF" opacity="0.7"/>
+
+    <!-- Keyboard Well -->
+    <path d="M 46 122 L 174 122 L 168 137 L 52 137 Z" fill="#202022" rx="2"/>
+    <!-- Keys Grid Representation -->
+    <line x1="50" y1="126" x2="170" y2="126" stroke="#404044" stroke-width="1.2" stroke-dasharray="7 2"/>
+    <line x1="53" y1="131" x2="167" y2="131" stroke="#404044" stroke-width="1.2" stroke-dasharray="6 2"/>
+    <line x1="55" y1="135" x2="165" y2="135" stroke="#404044" stroke-width="1.2" stroke-dasharray="14 3"/>
+
+    <!-- Trackpad -->
+    <rect x="94" y="140" width="32" height="9" rx="1.5" fill="#CDD1D6" stroke="#AEB3B8" stroke-width="0.7"/>
+    <!-- Thumb indent -->
+    <path d="M 104 121 C 104 122 107 123 110 123 C 113 123 116 122 116 121" stroke="#8E939A" stroke-width="1" fill="none"/>
+  </g>
+</svg>

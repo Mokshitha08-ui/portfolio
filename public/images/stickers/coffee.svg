@@ -1,0 +1,63 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="coffee-shadow" x="-10%" y="-10%" width="125%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#282020" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="saucer-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#EBE6DE"/>
+      <stop offset="100%" stop-color="#D6CEBF"/>
+    </linearGradient>
+    <linearGradient id="cup-rim-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2DDD5"/>
+    </linearGradient>
+    <radialGradient id="espresso-grad" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#7B4B28"/>
+      <stop offset="50%" stop-color="#542E15"/>
+      <stop offset="85%" stop-color="#3A1C0B"/>
+      <stop offset="100%" stop-color="#261206"/>
+    </radialGradient>
+    <linearGradient id="foam-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="60%" stop-color="#EADBCE"/>
+      <stop offset="100%" stop-color="#C5AA8E"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#coffee-shadow)">
+    <!-- White Sticker Cutout Border -->
+    <ellipse cx="100" cy="100" rx="90" ry="86" fill="#FFFFFF" stroke="#EDE8DF" stroke-width="2"/>
+
+    <!-- Ceramic Saucer -->
+    <ellipse cx="100" cy="100" rx="82" ry="78" fill="url(#saucer-grad)"/>
+    <ellipse cx="100" cy="100" rx="66" ry="63" fill="none" stroke="#D1C7B8" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Cup Handle on Right -->
+    <path d="M 148 84 C 168 84 172 116 148 116" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 148 84 C 168 84 172 116 148 116" stroke="url(#cup-rim-grad)" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Ceramic Cup Body (Top View) -->
+    <circle cx="96" cy="100" r="54" fill="url(#cup-rim-grad)" stroke="#C8BFB0" stroke-width="1.5"/>
+    <circle cx="96" cy="100" r="48" fill="#F4EFE6" stroke="#D4CBBD" stroke-width="1"/>
+
+    <!-- Rich Crema / Coffee Surface -->
+    <circle cx="96" cy="100" r="45" fill="url(#espresso-grad)"/>
+
+    <!-- Delicate Latte Art (Rosetta / Heart pattern) -->
+    <!-- Outer Crema Swirls -->
+    <ellipse cx="96" cy="98" rx="30" ry="24" fill="none" stroke="#C49B74" stroke-width="2" opacity="0.4" stroke-dasharray="8 6"/>
+    
+    <!-- Heart / Leaf Leaves in Milk Foam -->
+    <path d="M 96 74 C 90 82 82 88 84 96 C 86 102 92 108 96 118 C 100 108 106 102 108 96 C 110 88 102 82 96 74 Z" fill="url(#foam-grad)"/>
+    <ellipse cx="96" cy="78" rx="8" ry="6" fill="#FFFFFF" opacity="0.9"/>
+    <ellipse cx="96" cy="90" rx="10" ry="7" fill="#FFFFFF" opacity="0.85"/>
+    <ellipse cx="96" cy="102" rx="7" ry="5" fill="#FFFFFF" opacity="0.8"/>
+    <!-- Stem Slice -->
+    <path d="M 96 72 L 96 122" stroke="#683D1F" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>
+
+    <!-- Steam / Warmth Accent Lines -->
+    <path d="M 52 52 C 50 42 56 36 54 26" stroke="#9B1C31" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.3"/>
+    <path d="M 64 48 C 62 38 68 32 66 22" stroke="#9B1C31" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.4"/>
+  </g>
+</svg>
