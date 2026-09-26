@@ -33,7 +33,7 @@ export default function Footer() {
             <span>GitHub</span>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/sai-mokshitha-gali-54143837a/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-cherry transition-colors inline-flex items-center space-x-1.5"
@@ -42,7 +42,7 @@ export default function Footer() {
             <span>LinkedIn</span>
           </a>
           <a
-            href="mailto:contact@mokshithagali.dev"
+            href="mailto:mokshitagali@gmail.com"
             className="hover:text-cherry transition-colors inline-flex items-center space-x-1.5"
           >
             <MailIcon className="w-4 h-4" />

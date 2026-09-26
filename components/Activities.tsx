@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 interface Activity {
   title: string;
@@ -39,16 +38,7 @@ const activities: Activity[] = [
 export default function Activities() {
   return (
     <section className="relative py-24 sm:py-32 px-6 sm:px-8 max-w-6xl mx-auto border-t border-beige/60 overflow-hidden">
-      {/* Decorative Vintage Camera Sticker Motif */}
-      <div className="absolute top-20 right-4 sm:right-12 pointer-events-none opacity-80 select-none hidden md:block">
-        <Image
-          src="/images/stickers/vintage-camera.svg"
-          alt="Vintage camera sticker"
-          width={130}
-          height={100}
-          className="cutout-sticker rotate-6"
-        />
-      </div>
+
 
       {/* Editorial Section Heading */}
       <div className="mb-14 sm:mb-20">

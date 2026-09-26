@@ -57,7 +57,7 @@ export default function About() {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/sai-mokshitha-gali-54143837a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 px-4 py-2 bg-white hover:bg-cherry hover:text-cream text-ink text-xs sm:text-sm font-mono rounded-full border border-ink/15 hover:border-cherry transition-all duration-200 shadow-paper group"
@@ -68,7 +68,7 @@ export default function About() {
               </a>
 
               <a
-                href="mailto:contact@mokshithagali.dev"
+                href="mailto:mokshitagali@gmail.com"
                 className="inline-flex items-center space-x-2 px-4 py-2 bg-white hover:bg-cherry hover:text-cream text-ink text-xs sm:text-sm font-mono rounded-full border border-ink/15 hover:border-cherry transition-all duration-200 shadow-paper group"
               >
                 <MailIcon className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />

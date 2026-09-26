@@ -26,9 +26,11 @@ export default function Collage() {
   const cameraRef     = useRef<HTMLDivElement>(null);
   const flowerRef     = useRef<HTMLDivElement>(null);
   const coffeeRef     = useRef<HTMLDivElement>(null);
+  const toastRef      = useRef<HTMLDivElement>(null);
   const headphonesRef = useRef<HTMLDivElement>(null);
   const laptopRef     = useRef<HTMLDivElement>(null);
   const codeRef       = useRef<HTMLDivElement>(null);
+  const bunnyRef      = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -70,8 +72,14 @@ export default function Collage() {
         { x: 0, y: 0, opacity: 1, rotation: 0, duration: 1, ease: "power2.out" },
         0
       );
+      st.fromTo(
+        toastRef.current,
+        { x: -70, y: 55, opacity: 0.3, rotation: 10 },
+        { x: 0, y: 0, opacity: 1, rotation: 0, duration: 1, ease: "power2.out" },
+        0
+      );
 
-      // RIGHT 3: glide in from the right
+      // RIGHT 4: glide in from the right
       st.fromTo(
         headphonesRef.current,
         { x: 65, y: -45, opacity: 0.3, rotation: 16 },
@@ -79,14 +87,20 @@ export default function Collage() {
         0
       );
       st.fromTo(
-        laptopRef.current,
-        { x: 70, y: 15, opacity: 0.3, rotation: -14 },
+        codeRef.current,
+        { x: 55, y: 15, opacity: 0.3, rotation: 12 },
         { x: 0, y: 0, opacity: 1, rotation: 0, duration: 1, ease: "power2.out" },
         0
       );
       st.fromTo(
-        codeRef.current,
-        { x: 50, y: 45, opacity: 0.3, rotation: 12 },
+        bunnyRef.current,
+        { x: 70, y: 30, opacity: 0.3, rotation: -10 },
+        { x: 0, y: 0, opacity: 1, rotation: 0, duration: 1, ease: "power2.out" },
+        0
+      );
+      st.fromTo(
+        laptopRef.current,
+        { x: 65, y: 45, opacity: 0.3, rotation: -14 },
         { x: 0, y: 0, opacity: 1, rotation: 0, duration: 1, ease: "power2.out" },
         0
       );
@@ -117,16 +131,14 @@ export default function Collage() {
           <img
             src="/images/profile/portrait.jpg"
             alt="Mokshitha Gali"
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              (e.target as HTMLElement).style.display = "none";
-            }}
+            className="w-full h-full object-cover object-[75%_45%]"
           />
         </div>
 
         {/* ══════════════════════════════════════════════════════════════════
             LEFT SIDE: EXACTLY 3 STICKERS
             ══════════════════════════════════════════════════════════════════ */}
+
 
         {/* 1. LEFT TOP: Vintage Camera */}
         <div
@@ -164,10 +176,10 @@ export default function Collage() {
           </div>
         </div>
 
-        {/* 3. LEFT BOTTOM: Iced Coffee */}
+        {/* 3. LEFT LOWER-MIDDLE: Iced Coffee */}
         <div
           ref={coffeeRef}
-          className="absolute bottom-4 -left-7 sm:-left-9 z-[20] w-[64px] sm:w-[74px] pointer-events-auto cursor-pointer"
+          className="absolute top-[55%] -left-7 sm:-left-9 z-[20] w-[64px] sm:w-[74px] pointer-events-auto cursor-pointer"
         >
           <div className="fidget-bob-3 fidget-interactive rotate-[-5deg]">
             <Image
@@ -182,8 +194,26 @@ export default function Collage() {
           </div>
         </div>
 
+        {/* 4. LEFT BOTTOM: Avocado Toast */}
+        <div
+          ref={toastRef}
+          className="absolute bottom-2 -left-8 sm:-left-10 z-[20] w-[76px] sm:w-[86px] pointer-events-auto cursor-pointer"
+        >
+          <div className="fidget-bob-2 fidget-interactive rotate-[8deg]">
+            <Image
+              src="/images/stickers/toast_cut.png"
+              alt="Avocado toast sticker"
+              width={200}
+              height={180}
+              className="w-full h-auto"
+              style={{ ...shadowFront, mixBlendMode: "multiply" }}
+              priority
+            />
+          </div>
+        </div>
+
         {/* ══════════════════════════════════════════════════════════════════
-            RIGHT SIDE: EXACTLY 3 STICKERS
+            RIGHT SIDE: 4 STICKERS
             ══════════════════════════════════════════════════════════════════ */}
 
         {/* 1. RIGHT TOP: Over-Ear Headphones */}
@@ -204,10 +234,45 @@ export default function Collage() {
           </div>
         </div>
 
-        {/* 2. RIGHT MIDDLE: Silver MacBook (Elevated & Fully Visible) */}
+        {/* 2. RIGHT UPPER-MIDDLE: Code Sticker */}
+        <div
+          ref={codeRef}
+          className="absolute top-[28%] sm:top-[29%] -right-4 sm:-right-6 z-[20] pointer-events-auto cursor-pointer"
+        >
+          <div className="fidget-bob-3 fidget-interactive rotate-[5deg]">
+            <div
+              className="bg-white rounded-[4px] px-2.5 py-1 border border-ink/20 shadow-xs"
+              style={shadowBadge}
+            >
+              <span className="font-mono font-bold text-xs sm:text-[13px] text-ink tracking-tight select-none">
+                {"</code>"}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. RIGHT LOWER-MIDDLE: Miffy Bunny */}
+        <div
+          ref={bunnyRef}
+          className="absolute top-[52%] -right-7 sm:-right-9 z-[20] w-[68px] sm:w-[76px] pointer-events-auto cursor-pointer"
+        >
+          <div className="fidget-bob-1 fidget-interactive rotate-[-6deg]">
+            <Image
+              src="/images/stickers/bunny-cut.png"
+              alt="Miffy bunny plush"
+              width={180}
+              height={200}
+              className="w-full h-auto"
+              style={{ ...shadowFront, mixBlendMode: "multiply" }}
+              priority
+            />
+          </div>
+        </div>
+
+        {/* 4. RIGHT BOTTOM: Silver MacBook */}
         <div
           ref={laptopRef}
-          className="absolute top-[26%] sm:top-[27%] -right-11 sm:-right-14 z-[20] w-[112px] sm:w-[126px] pointer-events-auto cursor-pointer"
+          className="absolute bottom-3 -right-8 sm:-right-11 z-[20] w-[112px] sm:w-[126px] pointer-events-auto cursor-pointer"
         >
           <div className="fidget-bob-1 fidget-interactive rotate-[-7deg]">
             <Image
@@ -219,23 +284,6 @@ export default function Collage() {
               style={shadowFront}
               priority
             />
-          </div>
-        </div>
-
-        {/* 3. RIGHT BOTTOM: Code Sticker */}
-        <div
-          ref={codeRef}
-          className="absolute bottom-3 -right-5 sm:-right-7 z-[20] pointer-events-auto cursor-pointer"
-        >
-          <div className="fidget-bob-3 fidget-interactive rotate-[5deg]">
-            <div
-              className="bg-white rounded-[4px] px-2.5 py-1 border border-ink/20 shadow-xs"
-              style={shadowBadge}
-            >
-              <span className="font-mono font-bold text-xs sm:text-[13px] text-ink tracking-tight select-none">
-                {"</code>"}
-              </span>
-            </div>
           </div>
         </div>
       </div>

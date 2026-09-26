@@ -3,54 +3,56 @@
 import React from "react";
 
 interface SkillCategory {
+  number: string;
   category: string;
-  code: string;
   items: string[];
+  fullWidth?: boolean;
 }
 
-const skillGroups: SkillCategory[] = [
+const skillCategories: SkillCategory[] = [
   {
-    category: "languages",
-    code: "01",
+    number: "01",
+    category: "LANGUAGES",
     items: ["Java", "JavaScript", "SQL", "C++"],
   },
   {
-    category: "web technologies",
-    code: "02",
+    number: "02",
+    category: "WEB TECHNOLOGIES",
     items: [
       "React.js",
       "Node.js",
-      "Spring Boot",
-      "Vue.js",
+      "Bootstrap",
       "HTML5",
       "CSS3",
-      "Bootstrap",
+      "Vue.js",
+      "Spring Boot",
     ],
   },
   {
-    category: "databases",
-    code: "03",
+    number: "03",
+    category: "DATABASES",
     items: ["MongoDB", "PostgreSQL"],
   },
   {
-    category: "developer tools",
-    code: "04",
+    number: "04",
+    category: "DEVELOPER TOOLS",
     items: ["Git", "GitHub", "VS Code"],
   },
   {
-    category: "core fundamentals",
-    code: "05",
-    items: [
-      "Data Structures & Algorithms",
-      "Object-Oriented Programming (OOP)",
-      "Database Management Systems (DBMS)",
-    ],
+    number: "05",
+    category: "CORE CONCEPTS",
+    items: ["Data Structures & Algorithms", "OOP", "DBMS"],
+    fullWidth: true,
   },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 sm:py-32 px-6 sm:px-8 max-w-6xl mx-auto border-t border-beige/60">
+    <section
+      id="skills"
+      aria-label="Skills & Technologies"
+      className="py-24 sm:py-32 px-6 sm:px-8 max-w-6xl mx-auto border-t border-beige/80"
+    >
       {/* Editorial Section Heading */}
       <div className="mb-14 sm:mb-20">
         <span className="text-xs uppercase tracking-widest font-mono text-ink/50 mb-3 block">
@@ -61,36 +63,44 @@ export default function Skills() {
         </h2>
       </div>
 
-      {/* Editorial Horizontal Rows */}
-      <div className="divide-y divide-beige/80 border-y border-beige/80">
-        {skillGroups.map((group) => (
+      {/* Rectangular Bordered Cards Grid (2-column on desktop, 1-column on mobile) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        {skillCategories.map((group) => (
           <div
-            key={group.category}
-            className="py-8 sm:py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-baseline group hover:bg-beige/20 transition-colors duration-200 px-2 sm:px-4"
+            key={group.number}
+            className={`group bg-[#F4EFE6]/70 border border-ink/15 hover:border-cherry rounded-[20px] sm:rounded-[22px] p-7 sm:p-9 transition-all duration-300 ease-out hover:-translate-y-1 ${
+              group.fullWidth ? "md:col-span-2" : ""
+            }`}
           >
-            {/* Category label with index number */}
-            <div className="md:col-span-4 flex items-baseline space-x-3">
-              <span className="text-xs font-mono text-cherry font-semibold">
-                /{group.code}
+            {/* Small Category Heading */}
+            <div className="flex items-center space-x-2.5 pb-5 mb-5 border-b border-beige/70">
+              <span className="font-mono text-xs sm:text-sm font-semibold text-cherry tracking-wider">
+                {group.number}
               </span>
-              <h3 className="font-serif text-xl sm:text-2xl text-ink font-medium lowercase tracking-wide group-hover:text-cherry transition-colors duration-200">
+              <span className="w-3 h-[1px] bg-cherry/40" />
+              <h3 className="font-mono text-xs sm:text-sm tracking-widest text-ink/65 uppercase">
                 {group.category}
               </h3>
             </div>
 
-            {/* Editorial flow list of skills */}
-            <div className="md:col-span-8 flex flex-wrap items-center gap-x-5 gap-y-3">
-              {group.items.map((skill, idx) => (
-                <div key={skill} className="flex items-center space-x-5">
-                  <span className="text-base sm:text-lg font-sans text-ink/80 hover:text-cherry transition-colors duration-150 cursor-default select-none">
-                    {skill}
-                  </span>
-                  {idx < group.items.length - 1 && (
-                    <span className="w-1.5 h-1.5 rounded-full bg-cherry/30 select-none" />
-                  )}
-                </div>
+            {/* Vertical Skills List */}
+            <ul
+              className={
+                group.fullWidth
+                  ? "grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4"
+                  : "space-y-2.5 sm:space-y-3"
+              }
+            >
+              {group.items.map((skill) => (
+                <li
+                  key={skill}
+                  className="font-sans text-base sm:text-lg text-ink/85 group-hover:text-ink transition-colors duration-200 flex items-center space-x-2.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-cherry/30 group-hover:bg-cherry transition-colors duration-200" />
+                  <span>{skill}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         ))}
       </div>

@@ -20,7 +20,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${formState.name}\nEmail: ${formState.email}\n\nMessage:\n${formState.message}`
     );
-    window.location.href = `mailto:contact@mokshithagali.dev?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:mokshitagali@gmail.com?subject=${subject}&body=${body}`;
 
     setSubmitted(true);
     setTimeout(() => {
@@ -60,10 +60,10 @@ export default function Contact() {
                 <MailIcon className="w-4 h-4" />
               </span>
               <a
-                href="mailto:contact@mokshithagali.dev"
+                href="mailto:mokshitagali@gmail.com"
                 className="hover:text-cherry transition-colors font-mono text-xs sm:text-sm underline decoration-cherry/30 underline-offset-4"
               >
-                contact@mokshithagali.dev
+                mokshitagali@gmail.com
               </a>
             </div>
 
@@ -72,12 +72,12 @@ export default function Contact() {
                 <LinkedinIcon className="w-4 h-4" />
               </span>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/sai-mokshitha-gali-54143837a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-cherry transition-colors font-mono text-xs sm:text-sm underline decoration-cherry/30 underline-offset-4"
               >
-                linkedin.com/in/mokshitha-gali
+                linkedin.com/in/sai-mokshitha-gali-54143837a
               </a>
             </div>
 

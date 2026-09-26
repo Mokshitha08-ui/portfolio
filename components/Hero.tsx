@@ -23,15 +23,11 @@ export default function Hero() {
       <div className="my-auto max-w-4xl pt-6">
         {/* Editorial Masthead Bar */}
         <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-8 sm:mb-10 text-xs font-mono text-ink/60">
-          <span className="bg-beige/70 text-ink/80 px-3 py-1 rounded-sm border border-beige tracking-widest uppercase">
-            FOLIO • 2026 EDITION
-          </span>
-          <span className="w-6 h-[1px] bg-cherry/40 hidden sm:inline-block" />
           <span className="tracking-wider uppercase text-cherry font-medium">
             HYDERABAD, INDIA
           </span>
-          <span className="w-1.5 h-1.5 rounded-full bg-cherry/40 hidden sm:inline-block" />
-          <span className="tracking-wider text-ink/50 hidden md:inline">
+          <span className="w-1.5 h-1.5 rounded-full bg-cherry/40 inline-block" />
+          <span className="tracking-wider text-ink/50">
             CBIT CSE &apos;28
           </span>
         </div>
